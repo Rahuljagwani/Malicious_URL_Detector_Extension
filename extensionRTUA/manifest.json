@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Real Time URL Analysis",
+    "version": "1.0",
+    "description": "Real Time Detection of Malicious URLs through semantic analysis using ML techniques",
+    "permissions": [
+      "activeTab",
+      "nativeMessaging",
+      "tabs"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "action": {},
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }

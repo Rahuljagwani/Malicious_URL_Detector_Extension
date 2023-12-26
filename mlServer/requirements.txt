@@ -1,0 +1,9 @@
+flask
+numpy
+flask_cors
+tld
+scikit-learn
+urllib3
+regex
+gunicorn
+joblib
